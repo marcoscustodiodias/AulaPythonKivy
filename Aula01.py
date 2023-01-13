@@ -7,14 +7,13 @@ class MyApp(App):
     def build(self):
         box = BoxLayout()
         label = Label(text= 'Ola Mundo')
-        label.fonte_size = 50
+        label.font_size = 50
+        btn = Button(text='Button')
+        btn.font_size = 50
         
         box.add_widget(label)
-        
+        box.add_widget(btn)
         return box
-        
-
-
 
 
 MyApp().run()
